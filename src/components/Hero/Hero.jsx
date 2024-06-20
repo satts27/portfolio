@@ -69,7 +69,7 @@ const Hero = ({ scrollYProgress }) => {
             alt="Surya Styler"
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
           />
-          <h1 className="text-[50px] font-heading2">Hi, I am</h1>
+          <h1 className="text-[50px] font-heading2">Hi 👋, I am</h1>
           <h1 className="text-[250px] font-heading2">Surya Ganiga</h1>
           <h1 className="text-[150px] font-heading2 relative z-20">
             <span

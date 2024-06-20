@@ -77,7 +77,7 @@ const Projects = () => {
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="min-w-[calc(100%/3)] p-2 border border-purple-700 rounded-[12px]"
+              className="min-w-[calc(100%/3)] p-2 rounded-[12px]"
             >
               <Card
                 title={card.title}

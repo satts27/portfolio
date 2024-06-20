@@ -57,27 +57,32 @@ export default function Home() {
             <p className="text-[100px] font-heading text-creme text-border-black">
               Projects
             </p>
-            /
+
             <Projects />
           </div>
         </div>
-        <p>satts27</p>
-        <p>satts27</p>
+        {/* <p>satts27</p>
+        <p>satts27</p> */}
         <div className="p-20 text-center">
           <p className="text-[100px] font-heading text-creme text-border-black">
             Work&nbsp;Experience
           </p>
-          /
+
           <MainComponent />
         </div>
-        <p>satts27</p>
-        <p>satts27</p>
-        <div className="h-screen py-20 w-full">
-          <LayoutGrid cards={cards} />
+        {/* <p>satts27</p>
+        <p>satts27</p> */}
+        <div className="flex flex-col items-center justify-center h-screen bg-occur p-5">
+          <p className="text-[100px] font-heading text-creme text-border-black text-center mb-8">
+            Milestones Grid
+          </p>
+          <div className="w-full max-w-7xl h-full overflow-auto">
+            <LayoutGrid cards={cards} />
+          </div>
         </div>
 
-        <p>satts27</p>
-        <p>satts27</p>
+        {/* <p>satts27</p>
+        <p>satts27</p> */}
       </div>
       <div className="sticky bottom-0 w-full">
         <Footer />
@@ -89,7 +94,7 @@ export default function Home() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">House in the woods</p>
+      <p className="font-bold text-4xl text-white">Technical Workshops</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A serene and tranquil retreat, this house in the woods offers a peaceful
@@ -114,7 +119,7 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Greens all over</p>
+      <p className="font-bold text-4xl text-white">ISTE-VESIT</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
@@ -126,11 +131,11 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Rivers are serene</p>
+      <p className="font-bold text-4xl text-white">Hack-AI-Thon</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        Runner-up at Hack-AT-Thon conducted by AiCoLegion at VESIT, Mumbai. Oct
+        1 - 2, 2022
       </p>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Bento = () => {
   return (
@@ -30,8 +31,13 @@ const Bento = () => {
             <span>Formula 1</span>
           </div>
           <div className="p-4 border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex flex-col gap-1 col-span-1 row-span-3">
-            <span>4S</span>
-            <span>pic</span>
+            <span>Tech Stack</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>Nextjs</span>
+            <span>Reactjs</span>
+            <span>Flask</span>
+            <span>Tensorflow</span>
           </div>
           <div className="p-4 border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex flex-col gap-1 col-span-2 row-span-2">
             <span>Achievements</span>
@@ -39,9 +45,22 @@ const Bento = () => {
             <span>5 X Top 10 Finish</span>
             <span>450+ Leetcode</span>
           </div>
-          <div className="p-4 border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex flex-col gap-1 col-span-1 row-span-2">
-            <span>6Surya</span>
-            <span>pic</span>
+          <div className="p-4 border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex-col gap-1 col-span-1 row-span-2 flex justify-center items-center">
+            <p className="text-bebas">Links</p>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <FaGithub />
+              </div>
+              <div>
+                <FaLinkedinIn />
+              </div>
+              <div>
+                <FaTwitter />
+              </div>
+              <div>
+                <FaInstagram />
+              </div>
+            </div>
           </div>
         </section>
       </div>
