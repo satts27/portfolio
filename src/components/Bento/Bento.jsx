@@ -8,7 +8,7 @@ const Bento = () => {
         {/* Vertical text */}
         <div className="flex flex-col justify-center items-center h-full">
           <div className="transform -rotate-90 text-[80px] font-heading text-creme w-full scale-y-200 scale-x-150 text-border-black">
-            @SATTS27
+            ABOUT&nbsp;ME
           </div>
         </div>
         {/* Bento grid */}

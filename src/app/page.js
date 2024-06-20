@@ -43,30 +43,39 @@ export default function Home() {
         <Hero scrollYProgress={scrollYProgress} />
       </div>
       <div className="bg-occur flex-1 relative z-10">
-        <div className="flex items-center justify-center bg-pinkish h-[100vh]">
-          <div>
-            <Bento />
-            {/* yaha moving tech stack */}
+        <div className="bg-gradient-to-b from-pinkish to-occur">
+          <div className="flex items-center justify-center h-[100vh]">
+            <div>
+              <Bento />
+              {/* yaha moving tech stack */}
+            </div>
+          </div>
+          {/* 
+        <p>satts27</p>
+        <p>satts27</p> */}
+          <div className="text-center py-2">
+            <p className="text-[100px] font-heading text-creme text-border-black">
+              Projects
+            </p>
+            /
+            <Projects />
           </div>
         </div>
-
         <p>satts27</p>
         <p>satts27</p>
-        <div>
-          <p>P</p>
-          <Projects />
+        <div className="p-20 text-center">
+          <p className="text-[100px] font-heading text-creme text-border-black">
+            Work&nbsp;Experience
+          </p>
+          /
+          <MainComponent />
         </div>
         <p>satts27</p>
-        <div></div>
         <p>satts27</p>
         <div className="h-screen py-20 w-full">
           <LayoutGrid cards={cards} />
         </div>
-        <p>satts27</p>
-        <p>satts27</p>
-        <div className="p-20">
-          <MainComponent />
-        </div>
+
         <p>satts27</p>
         <p>satts27</p>
       </div>

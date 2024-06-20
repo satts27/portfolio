@@ -16,6 +16,7 @@ module.exports = {
         heading: ["Teko", "sans-serif"],
         heading2: ["Anton", "sans-serif"],
         heading3: ["Kalam", "cursive"],
+        bebas: ["Bebas Neue", "sans-serif"],
       },
       colors: {
         creme: "#ede6dc",
