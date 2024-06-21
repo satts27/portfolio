@@ -62,27 +62,32 @@ const Hero = ({ scrollYProgress }) => {
 
   return (
     <motion.div style={{ scale }}>
-      <div className="flex bg-occur h-[100vh] sticky top-0 items-center justify-center">
-        <div className="relative text-pinkish p-8 text-center text-border-black">
+      <div className="flex flex-col justify-start bg-occur h-[100vh] sticky top-0 items-center sm:justify-center sm:flex-row">
+        <div>
+          <div className="relative text-pinkish p-8 text-center text-border-black">
+            <h1 className="text-[50px] sm:text-[50px] font-heading2">
+              Hi 👋, I am
+            </h1>
+            <h1 className="text-[90px] sm:text-[250px] font-heading2">
+              Surya Ganiga
+            </h1>
+            <h1 className="text-[40px] sm:text-[150px] font-heading2 relative z-20">
+              <span
+                className="txt-rotate"
+                dataperiod="1000"
+                data-rotate='["Software Developer", "ML Enthusiast", "Data Analyst"]'
+              >
+                <span className="wrap">
+                  {" " + (text === "" ? "\u00A0" : text)}
+                </span>
+              </span>
+            </h1>
+          </div>
           <img
             src="/Surya_styler-nobg.png"
             alt="Surya Styler"
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
           />
-          <h1 className="text-[50px] font-heading2">Hi 👋, I am</h1>
-          <h1 className="text-[250px] font-heading2">Surya Ganiga</h1>
-          <h1 className="text-[150px] font-heading2 relative z-20">
-            <span
-              className="txt-rotate"
-              dataperiod="1000"
-              data-rotate='["Software Developer", "ML Enthusiast", "Data Analyst"]'
-            >
-              <span className="wrap">
-                {" " + (text === "" ? "\u00A0" : text)}
-              </span>
-            </span>
-          </h1>
-          <p className="text-[20px]">asdasdpdpas</p>
         </div>
       </div>
     </motion.div>

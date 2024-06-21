@@ -64,42 +64,42 @@ const MainComponent = () => {
   };
 
   return (
-    <div className="flex">
-      <div className="w-1/4  flex justify-center items-center">
+    <div className="flex flex-col md:flex-row">
+      <div className="w-full md:w-1/4 flex justify-center items-center md:block">
         <div className="p-4">
           <LeftPanel onSelect={handleSelect} />
         </div>
       </div>
-      <div className="w-3/4 p-4 bg-creme flex items-center justify-center">
+      <div className="w-full md:w-3/4 p-4 bg-creme flex items-center justify-center">
         {selected ? (
-          <div className="bg-white p-8 rounded-lg shadow-lg w-full">
-            <h1 className="text-4xl font-bold mb-4 text-center">
+          <div className="bg-white p-4 md:p-8 rounded-lg shadow-lg w-full">
+            <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center">
               {experiences[selected].organization}
             </h1>
-            <p className="text-xl mb-2">
+            <p className="text-lg md:text-xl mb-2">
               <strong>Role:</strong> {experiences[selected].role}
             </p>
-            <p className="text-xl mb-2">
+            <p className="text-lg md:text-xl mb-2">
               <strong>Timeframe:</strong> {experiences[selected].timeframe}
             </p>
-            <p className="text-xl mb-2">
+            <p className="text-lg md:text-xl mb-2">
               <strong>Key Responsibilities:</strong>
             </p>
             <ul className="list-disc list-inside mb-4">
               {experiences[selected].responsibilities.map((resp, index) => (
-                <li key={index} className="text-lg">
+                <li key={index} className="text-base md:text-lg">
                   {resp}
                 </li>
               ))}
             </ul>
             {experiences[selected].techStack && (
-              <p className="text-xl">
+              <p className="text-lg md:text-xl">
                 <strong>Tech Stack:</strong> {experiences[selected].techStack}
               </p>
             )}
           </div>
         ) : (
-          <h1 className="text-3xl text-center">
+          <h1 className="text-xl md:text-3xl text-center">
             Select an experience to view details.
           </h1>
         )}

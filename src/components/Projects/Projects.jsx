@@ -22,17 +22,17 @@ const Projects = () => {
       description:
         "A user-friendly e-commerce platform with a range of features.",
     },
-    {
-      title: "Personal Blog",
-      href: "https://example.com/blog",
-      description: "A stylish and customizable personal blog template.",
-    },
-    {
-      title: "Portfolio Website",
-      href: "https://example.com/portfolio",
-      description:
-        "A sleek portfolio website to showcase your work and projects.",
-    },
+    // {
+    //   title: "Personal Blog",
+    //   href: "https://example.com/blog",
+    //   description: "A stylish and customizable personal blog template.",
+    // },
+    // {
+    //   title: "Portfolio Website",
+    //   href: "https://example.com/portfolio",
+    //   description:
+    //     "A sleek portfolio website to showcase your work and projects.",
+    // },
   ];
   const cardCount = cardData.length;
   const visibleCount = 3;
@@ -50,8 +50,8 @@ const Projects = () => {
   };
 
   return (
-    <div className="p-10">
-      <div className="flex justify-between mb-4 items-center">
+    <div className="p-4 sm:p-10">
+      {/* <div className="flex justify-between mb-4 items-center">
         <button
           className="bg-purple-500 text-white px-4 py-2 rounded mr-4"
           onClick={handlePrev}
@@ -66,27 +66,20 @@ const Projects = () => {
         >
           Next
         </button>
-      </div>
-      <div className="overflow-hidden">
-        <section
-          className="flex transition-transform duration-300"
-          style={{
-            transform: `translateX(-${startIndex * (100 / visibleCount)}%)`,
-          }}
-        >
-          {cardData.map((card, index) => (
-            <div
-              key={index}
-              className="min-w-[calc(100%/3)] p-2 rounded-[12px]"
-            >
-              <Card
-                title={card.title}
-                href={card.href}
-                description={card.description}
-              />
-            </div>
-          ))}
-        </section>
+      </div> */}
+      <div className="overflow-hidden grid grid-cols-1 sm:grid-cols-3 ">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className="w-full sm:min-w-[calc(100%/3)] p-2 rounded-[12px]"
+          >
+            <Card
+              title={card.title}
+              href={card.href}
+              description={card.description}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

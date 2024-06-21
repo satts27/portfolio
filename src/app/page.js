@@ -36,23 +36,19 @@ export default function Home() {
       ref={container}
       className="relative h-[200vh] bg-occur flex flex-col min-h-screen"
     >
-      <div className="absolute top-0 left-0 right-0 z-20">
+      {/* <div className="absolute top-0 left-0 right-0 z-20">
         <Curve text="HI" />
-      </div>
+      </div> */}
       <div className="relative z-10 flex-1">
         <Hero scrollYProgress={scrollYProgress} />
       </div>
       <div className="bg-occur flex-1 relative z-10">
         <div className="bg-gradient-to-b from-pinkish to-occur">
-          <div className="flex items-center justify-center h-[100vh]">
+          <div className="flex items-center justify-center ">
             <div>
               <Bento />
-              {/* yaha moving tech stack */}
             </div>
           </div>
-          {/* 
-        <p>satts27</p>
-        <p>satts27</p> */}
           <div className="text-center py-2">
             <p className="text-[100px] font-heading text-creme text-border-black">
               Projects
@@ -61,28 +57,21 @@ export default function Home() {
             <Projects />
           </div>
         </div>
-        {/* <p>satts27</p>
-        <p>satts27</p> */}
         <div className="p-20 text-center">
-          <p className="text-[100px] font-heading text-creme text-border-black">
-            Work&nbsp;Experience
+          <p className="text-[50px] sm:text-[100px] font-heading text-creme text-border-black">
+            Work Experience
           </p>
 
           <MainComponent />
         </div>
-        {/* <p>satts27</p>
-        <p>satts27</p> */}
         <div className="flex flex-col items-center justify-center h-screen bg-occur p-5">
-          <p className="text-[100px] font-heading text-creme text-border-black text-center mb-8">
-            Milestones Grid
+          <p className="text-[50px] sm:text-[100px] font-heading text-creme text-border-black">
+            Milestones
           </p>
           <div className="w-full max-w-7xl h-full overflow-auto">
             <LayoutGrid cards={cards} />
           </div>
         </div>
-
-        {/* <p>satts27</p>
-        <p>satts27</p> */}
       </div>
       <div className="sticky bottom-0 w-full">
         <Footer />
@@ -122,8 +111,8 @@ const SkeletonThree = () => {
       <p className="font-bold text-4xl text-white">ISTE-VESIT</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        A house surrounded by greenery and natures beauty. Its the perfect place
+        to relax, unwind, and enjoy life.
       </p>
     </div>
   );
