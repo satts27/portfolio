@@ -36,9 +36,9 @@ export default function Home() {
       ref={container}
       className="relative h-[200vh] bg-occur flex flex-col min-h-screen"
     >
-      {/* <div className="absolute top-0 left-0 right-0 z-20">
+      <div className="absolute top-0 left-0 right-0 z-20">
         <Curve text="HI" />
-      </div> */}
+      </div>
       <div className="relative z-10 flex-1">
         <Hero scrollYProgress={scrollYProgress} />
       </div>
@@ -147,7 +147,7 @@ const cards = [
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnails: ["/surya_styler.png"],
+    thumbnails: ["/ISTE_grp1.jpg"],
   },
   {
     id: 4,

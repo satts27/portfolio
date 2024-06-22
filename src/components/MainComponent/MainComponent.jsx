@@ -1,23 +1,37 @@
 import React, { useState } from "react";
 
-const LeftPanel = ({ onSelect }) => {
+const LeftPanel = ({ onSelect, selected }) => {
+  const isSelected = (section) => selected === section;
+
   return (
     <div className="flex flex-col space-y-4">
       <button
         onClick={() => onSelect("ISTE-VESIT")}
-        className="p-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
+        className={`p-4 ${
+          isSelected("ISTE-VESIT")
+            ? "bg-orangish text-occur"
+            : "bg-pinkish text-white"
+        } rounded-lg hover:bg-orangish hover:text-occur transition duration-300`}
       >
         ISTE-VESIT
       </button>
       <button
         onClick={() => onSelect("NISSAN CORPORATION")}
-        className="p-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300"
+        className={`p-4 ${
+          isSelected("NISSAN CORPORATION")
+            ? "bg-orangish text-occur"
+            : "bg-pinkish text-white"
+        } rounded-lg hover:bg-orangish hover:text-occur transition duration-300`}
       >
         NISSAN CORPORATION
       </button>
       <button
         onClick={() => onSelect("SUD-LIFE-INSURANCE")}
-        className="p-4 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300"
+        className={`p-4 ${
+          isSelected("SUD-LIFE-INSURANCE")
+            ? "bg-orangish text-occur"
+            : "bg-pinkish text-white"
+        } rounded-lg hover:bg-orangish hover:text-occur transition duration-300`}
       >
         SUD-LIFE-INSURANCE
       </button>
@@ -26,7 +40,7 @@ const LeftPanel = ({ onSelect }) => {
 };
 
 const MainComponent = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState("NISSAN CORPORATION");
 
   const handleSelect = (section) => {
     setSelected(section);
@@ -36,7 +50,7 @@ const MainComponent = () => {
     "ISTE-VESIT": {
       organization: "ISTE - VESIT",
       role: "Senior Technical Officer",
-      timeframe: "2021 – Present",
+      timeframe: "2021 – 2024",
       responsibilities: [
         "Conducted Technical Workshops",
         "Contributing to Event Documentation",
@@ -46,11 +60,12 @@ const MainComponent = () => {
     "NISSAN CORPORATION": {
       organization: "Nissan Motor Corporation",
       role: "Data Analyst Intern",
-      timeframe: "04/2023 - Present",
+      timeframe: "04/2023 - 04/2024",
       responsibilities: [
         "Automating the process of report generation",
         "Investigating the reasons behind higher-than-anticipated data consumption in vehicles",
       ],
+      techStack: "Python - DataAnalysis",
     },
     "SUD-LIFE-INSURANCE": {
       organization: "SUD Life Insurance",
@@ -67,7 +82,7 @@ const MainComponent = () => {
     <div className="flex flex-col md:flex-row">
       <div className="w-full md:w-1/4 flex justify-center items-center md:block">
         <div className="p-4">
-          <LeftPanel onSelect={handleSelect} />
+          <LeftPanel onSelect={handleSelect} selected={selected} />
         </div>
       </div>
       <div className="w-full md:w-3/4 p-4 bg-creme flex items-center justify-center">

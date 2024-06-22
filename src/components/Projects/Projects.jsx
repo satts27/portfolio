@@ -21,9 +21,9 @@ const Projects = () => {
     },
     {
       title: "Fraud Detection",
-      href: "https://example.com/e-commerce",
+      href: "https://github.com/Khushipm/FraudDetectionWebsite",
       description:
-        "A user-friendly e-commerce platform with a range of features.",
+        "A sophisticated fraud detection website utilizing advanced algorithms to ensure secure transactions.",
       img: "/StockMarket.png",
     },
     // {

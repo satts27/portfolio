@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -20,10 +22,26 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-between w-full mt-4">
-              <span className="text-[20px] md:text-[30px]">LinkedIn</span>
-              <span className="text-[20px] md:text-[30px]">GitHub</span>
-              <span className="text-[20px] md:text-[30px]">Twitter</span>
-              <span className="text-[20px] md:text-[30px]">Instagram</span>
+              <div className="flex items-center text-[20px] md:text-[30px] mb-2 md:mb-0">
+                <Link href={"https://www.linkedin.com/in/surya-ganiga/"}>
+                  <FaLinkedinIn className="mr-2" /> <span>LinkedIn</span>
+                </Link>
+              </div>
+              <div className="flex items-center text-[20px] md:text-[30px] mb-2 md:mb-0">
+                <Link href={"https://github.com/satts27"}>
+                  <FaGithub className="mr-2" /> <span>GitHub</span>
+                </Link>
+              </div>
+              <div className="flex items-center text-[20px] md:text-[30px] mb-2 md:mb-0">
+                <Link href={"https://x.com/2304Satts"}>
+                  <FaTwitter className="mr-2" /> <span>Twitter</span>
+                </Link>
+              </div>
+              <div className="flex items-center text-[20px] md:text-[30px] mb-2 md:mb-0">
+                <Link href={"https://www.instagram.com/sattu._.supari/"}>
+                  <FaInstagram className="mr-2" /> <span>Instagram</span>
+                </Link>
+              </div>
             </div>
           </div>
 
