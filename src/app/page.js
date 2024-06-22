@@ -44,12 +44,12 @@ export default function Home() {
       </div>
       <div className="bg-occur flex-1 relative z-10">
         <div className="bg-gradient-to-b from-pinkish to-occur">
-          <div className="flex items-center justify-center ">
+          <div className="flex items-center justify-center">
             <div>
               <Bento />
             </div>
           </div>
-          <div className="text-center py-2">
+          <div className="text-center py-10">
             <p className="text-[100px] font-heading text-creme text-border-black">
               Projects
             </p>
@@ -57,7 +57,7 @@ export default function Home() {
             <Projects />
           </div>
         </div>
-        <div className="p-20 text-center">
+        <div className="px-20 text-center">
           <p className="text-[50px] sm:text-[100px] font-heading text-creme text-border-black">
             Work Experience
           </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 const Bento = () => {
   return (
@@ -8,12 +9,15 @@ const Bento = () => {
       <div className="flex flex-col sm:flex-row w-full">
         {/* Vertical text */}
         <div className="flex flex-col justify-center items-center sm:items-start sm:justify-center h-full mb-4 sm:mb-0">
-          <p className="transform rotate-0 sm:-rotate-90 text-[40px] sm:text-[80px] font-heading text-creme w-full sm:w-auto sm:scale-y-200 sm:scale-x-150 text-border-black">
-            ABOUT ME
-          </p>
+          <div className="transform rotate-0 sm:-rotate-90 w-full sm:w-auto">
+            <p className="text-[40px] sm:text-[80px] font-heading text-creme flex justify-center sm:justify-between items-center whitespace-nowrap sm:scale-y-200 sm:scale-x-150 text-border-black">
+              <span>ABOUT</span>
+              <span className="ml-2">ME</span>
+            </p>
+          </div>
         </div>
         {/* Bento grid */}
-        <section className="grid grid-cols-1 sm:grid-cols-6 gap-4 flex-grow">
+        <section className="grid grid-cols-1 sm:grid-cols-6 gap-4 flex-grow font-heading3">
           <div className="border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex flex-col gap-1 sm:col-span-2 sm:row-span-4">
             <img
               src="/surya_wp_cropped-Photoroom.png"
@@ -21,7 +25,7 @@ const Bento = () => {
               className="w-full h-full object-cover rounded-[12px]"
             />
           </div>
-          <div className="p-4 border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex flex-col gap-1 sm:col-span-3 sm:row-span-2 font-bebas text-base sm:text-xl">
+          <div className="p-4 border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex flex-col gap-1 sm:col-span-3 sm:row-span-2 text-base sm:text-xl">
             <p>
               I&apos;m <span className="font-bold">Surya Ganiga</span>, an
               engineering graduate specializing in
@@ -82,16 +86,24 @@ const Bento = () => {
             </p>
             <div className="grid grid-cols-4 gap-4 justify-center items-center">
               <div className="p-1">
-                <FaGithub />
+                <Link href={"https://github.com/satts27"}>
+                  <FaGithub />
+                </Link>
               </div>
               <div className="p-1">
-                <FaLinkedinIn />
+                <Link href={"https://www.linkedin.com/in/surya-ganiga/"}>
+                  <FaLinkedinIn />
+                </Link>
               </div>
               <div className="p-1">
-                <FaTwitter />
+                <Link href={"https://x.com/2304Satts"}>
+                  <FaTwitter />
+                </Link>
               </div>
               <div className="p-1">
-                <FaInstagram />
+                <Link href={"https://www.instagram.com/sattu._.supari/"}>
+                  <FaInstagram />
+                </Link>
               </div>
             </div>
           </div>

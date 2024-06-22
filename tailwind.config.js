@@ -23,6 +23,7 @@ module.exports = {
         occur: "#6d5444",
         pinkish: "#c6b19d",
         ocshadow: "#896e57",
+        orangish: "#f4ebdb",
       },
       scale: {
         200: "2.00",

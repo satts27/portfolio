@@ -1,26 +1,30 @@
 import React, { useState } from "react";
 import { Card } from "../Card/Card";
+import Link from "next/link";
 
 const Projects = () => {
   const [startIndex, setStartIndex] = useState(0);
   const cardData = [
     {
       title: "Stock Market Analysis Website",
-      href: "https://example.com/stock-market",
+      href: "https://github.com/satts27/Stock-Market",
       description:
         "A comprehensive platform for analyzing stock market trends and data.",
+      img: "/StockMarket.png",
     },
     {
       title: "Cyber Bullying Detection",
-      href: "https://example.com/cyber-bullying",
+      href: "https://github.com/satts27/Rns",
       description:
         "An AI-powered tool for detecting and preventing cyber bullying.",
+      img: "/Guardify2.jpg",
     },
     {
-      title: "E-commerce Platform",
+      title: "Fraud Detection",
       href: "https://example.com/e-commerce",
       description:
         "A user-friendly e-commerce platform with a range of features.",
+      img: "/StockMarket.png",
     },
     // {
     //   title: "Personal Blog",
@@ -73,11 +77,14 @@ const Projects = () => {
             key={index}
             className="w-full sm:min-w-[calc(100%/3)] p-2 rounded-[12px]"
           >
-            <Card
-              title={card.title}
-              href={card.href}
-              description={card.description}
-            />
+            <Link href={card.href}>
+              <Card
+                title={card.title}
+                href={card.href}
+                description={card.description}
+                img={card.img}
+              />
+            </Link>
           </div>
         ))}
       </div>
