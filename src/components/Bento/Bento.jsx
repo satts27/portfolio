@@ -84,25 +84,25 @@ const Bento = () => {
             <p className="font-heading text-[20px] sm:text-[30px] text-creme text-border-black">
               Links
             </p>
-            <div className="grid grid-cols-4 gap-4 justify-center items-center">
-              <div className="p-1">
+            <div className="grid grid-cols-4 gap-4 justify-center items-center md:grid-cols-2 ">
+              <div className="p-2">
                 <Link href={"https://github.com/satts27"}>
-                  <FaGithub />
+                  <FaGithub className="text-3xl" /> {/* Adjust icon size */}
                 </Link>
               </div>
-              <div className="p-1">
+              <div className="p-2">
                 <Link href={"https://www.linkedin.com/in/surya-ganiga/"}>
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="text-3xl" /> {/* Adjust icon size */}
                 </Link>
               </div>
-              <div className="p-1">
+              <div className="p-2">
                 <Link href={"https://x.com/2304Satts"}>
-                  <FaTwitter />
+                  <FaTwitter className="text-3xl" /> {/* Adjust icon size */}
                 </Link>
               </div>
-              <div className="p-1">
+              <div className="p-2">
                 <Link href={"https://www.instagram.com/sattu._.supari/"}>
-                  <FaInstagram />
+                  <FaInstagram className="text-3xl" /> {/* Adjust icon size */}
                 </Link>
               </div>
             </div>

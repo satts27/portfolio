@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textShadow: {
+        "3d-custom":
+          "rgba(198, 177, 157, .1) 0 0 2px, rgba(198, 177, 157, .3) 4px 5px 0, rgba(198, 177, 157, .2) 7px 11px 0, rgba(198, 177, 157, .1) 12px 17px 0, rgba(198, 177, 157, .05) 17px 23px 0",
+        "3d-cream":
+          "rgba(237, 230, 220, .1) 0 0 2px, rgba(237, 230, 220, .3) 4px 5px 0, rgba(237, 230, 220, .2) 7px 11px 0, rgba(237, 230, 220, .1) 12px 17px 0, rgba(237, 230, 220, .05) 17px 23px 0",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -30,5 +36,18 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-shadow-3d": {
+          textShadow:
+            "rgba(198, 177, 157, .1) 0 0 2px, rgba(198, 177, 157, .3) 4px 5px 0, rgba(198, 177, 157, .2) 7px 11px 0, rgba(198, 177, 157, .1) 12px 17px 0, rgba(198, 177, 157, .05) 17px 23px 0",
+        },
+        ".text-shadow-3d-cream": {
+          textShadow:
+            "rgba(237, 230, 220, .1) 0 0 2px, rgba(237, 230, 220, .3) 4px 5px 0, rgba(237, 230, 220, .2) 7px 11px 0, rgba(237, 230, 220, .1) 12px 17px 0, rgba(237, 230, 220, .05) 17px 23px 0",
+        },
+      });
+    },
+  ],
 };

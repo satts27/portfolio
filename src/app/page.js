@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center py-10">
-            <p className="text-[100px] font-heading text-creme text-border-black">
+            <p className="text-[100px] font-heading text-creme text-shadow-3d-cream">
               Projects
             </p>
 
@@ -58,14 +58,14 @@ export default function Home() {
           </div>
         </div>
         <div className="px-20 text-center">
-          <p className="text-[50px] sm:text-[100px] font-heading text-creme text-border-black">
+          <p className="text-[50px] sm:text-[100px] font-heading text-creme text-shadow-3d-cream">
             Work Experience
           </p>
 
           <MainComponent />
         </div>
         <div className="flex flex-col items-center justify-center h-screen bg-occur p-5">
-          <p className="text-[50px] sm:text-[100px] font-heading text-creme text-border-black">
+          <p className="text-[50px] sm:text-[100px] font-heading text-creme text-shadow-3d-cream">
             Milestones
           </p>
           <div className="w-full max-w-7xl h-full overflow-auto">

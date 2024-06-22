@@ -14,10 +14,10 @@ export function Card({ title, href, description, img }) {
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-black">{description}</span>
           </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 ">
+          <div className="flex flex-1 w-full rounded-lg mt-4">
             <img
               src={img}
-              alt="Description of image"
+              alt={description}
               className="w-full h-full object-cover rounded-[12px]"
             />
           </div>
