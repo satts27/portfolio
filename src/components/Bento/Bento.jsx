@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Bento = () => {
   return (
-    <div className="flex flex-col p-4 sm:p-8 sm:min-h-[75vh]">
+    <div className="flex flex-col p-4 sm:p-8 min-h[75vh] sm:h-[75vh]">
       {/* Container for vertical text and bento grid */}
       <div className="flex flex-col sm:flex-row w-full">
         {/* Vertical text */}
