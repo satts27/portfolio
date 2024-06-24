@@ -65,7 +65,7 @@ const Hero = ({ scrollYProgress }) => {
       <div className="flex flex-col justify-start bg-occur h-[100vh] sticky top-0 items-center sm:justify-center sm:flex-row">
         <div>
           <div className="relative text-pinkish p-8 text-center text-border-black">
-            <h1 className="text-[50px] sm:text-[50px] font-heading2 text-shadow-3d">
+            <h1 className="text-[50px] sm:text-[50px] font-heading2">
               Hi, I am
             </h1>
             <h1 className="text-[90px] sm:text-[250px] font-heading2 text-shadow-3d">

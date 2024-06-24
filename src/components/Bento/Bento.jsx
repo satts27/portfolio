@@ -1,5 +1,12 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejsSmall,
+  DiPython,
+  DiJava,
+} from "react-icons/di"; // Devicon icons
 import Link from "next/link";
 
 const Bento = () => {
@@ -34,12 +41,9 @@ const Bento = () => {
                 Artificial Intelligence and Data Science
               </span>
               . Driven by a deep
-              <span className="text-indigo-600 font-semibold">
-                {" "}
-                curiosity
-              </span>{" "}
-              and a passion for technology, I&apos;ve actively participated in
-              and won several hackathons, exploring and implementing emerging
+              <span className="text-occur font-semibold"> curiosity</span> and a
+              passion for technology, I&apos;ve actively participated in and won
+              several hackathons, exploring and implementing emerging
               technologies. My involvement with{" "}
               <span className="font-bold">ISTE-VESIT</span>, a prominent
               technical organization, has significantly contributed to my
@@ -48,7 +52,7 @@ const Bento = () => {
               <span className="font-bold">AI and Data Science</span>, I thrive
               on tackling complex challenges and developing innovative solutions
               and am always{" "}
-              <span className="text-indigo-600 font-semibold">
+              <span className="text-white font-semibold">
                 eager to learn and adapt
               </span>
               .
@@ -65,7 +69,7 @@ const Bento = () => {
             <p className="font-heading text-[20px] sm:text-[30px] text-creme text-border-black">
               Tech Stack
             </p>
-            <span>Java</span>
+            {/* <span>Java</span> */}
             <span>Python</span>
             <span>Nextjs</span>
             <span>Reactjs</span>

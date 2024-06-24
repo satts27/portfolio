@@ -86,8 +86,9 @@ const SkeletonOne = () => {
       <p className="font-bold text-4xl text-white">Technical Workshops</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+        Conducted technical workshops with over 300 attendees, providing
+        hands-on training and fostering skill development in emerging
+        technologies.
       </p>
     </div>
   );
@@ -111,8 +112,8 @@ const SkeletonThree = () => {
       <p className="font-bold text-4xl text-white">ISTE-VESIT</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and natures beauty. Its the perfect place
-        to relax, unwind, and enjoy life.
+        I led the technical team at ISTE-VESIT, overseeing projects and guiding
+        team members to achieve organizational goals.
       </p>
     </div>
   );
