@@ -27,7 +27,7 @@ const Bento = () => {
         <section className="grid grid-cols-1 sm:grid-cols-6 gap-4 flex-grow font-heading3">
           <div className="border-2 border-creme shadow-lg shadow-ocshadow rounded-[12px] flex flex-col gap-1 sm:col-span-2 sm:row-span-4">
             <img
-              src="/surya_wp_cropped-Photoroom.png"
+              src="./surya_wp_cropped-Photoroom.png"
               alt="Description of image"
               className="w-full h-full object-cover rounded-[12px]"
             />

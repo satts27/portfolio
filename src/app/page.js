@@ -136,24 +136,24 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnails: ["/Iste_workshop.jpg", "/Iste_workshop_2.jpg"],
+    thumbnails: ["./Iste_workshop.jpg", "./Iste_workshop_2.jpg"],
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnails: ["/RNS_winning.jpg"],
+    thumbnails: ["./RNS_winning.jpg"],
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnails: ["/ISTE_grp1.jpg"],
+    thumbnails: ["./ISTE_grp1.jpg"],
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
-    thumbnails: ["/BitLords1.jpg", "/BitLords2.jpg"],
+    thumbnails: ["./BitLords1.jpg", "./BitLords2.jpg"],
   },
 ];

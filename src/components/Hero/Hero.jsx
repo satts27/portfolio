@@ -84,7 +84,7 @@ const Hero = ({ scrollYProgress }) => {
             </h1>
           </div>
           <img
-            src="/Surya_styler-nobg.png"
+            src="./Surya_styler-nobg.png"
             alt="Surya Styler"
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
           />

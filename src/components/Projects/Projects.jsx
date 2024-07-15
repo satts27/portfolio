@@ -12,21 +12,21 @@ const Projects = () => {
       href: "https://github.com/satts27/Stock-Market",
       description:
         "A comprehensive platform for analyzing stock market trends and data.",
-      img: "/StockMarket.png",
+      img: "./StockMarket.png",
     },
     {
       title: "Cyber Bullying Detection",
       href: "https://github.com/satts27/Rns",
       description:
         "An AI-powered tool for detecting and preventing cyber bullying.",
-      img: "/Guardify2.jpg",
+      img: "./Guardify2.jpg",
     },
     {
       title: "Fraud Detection",
       href: "https://github.com/Khushipm/FraudDetectionWebsite",
       description:
         "A sophisticated fraud detection website utilizing advanced algorithms to ensure secure transactions.",
-      img: "/StockMarket.png",
+      img: "./StockMarket.png",
     },
     // {
     //   title: "Personal Blog",
